@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:columnCount="2">
+        <Button
+            android:id="@+id/back_button"
+            android:fontFamily="@font/fredokaone"
+            android:backgroundTint="@color/transparent_black"
+            android:stateListAnimator="@null"
+            android:layout_gravity="top"
+            android:drawableLeft="@drawable/ic_round_arrow_back_24"
+            android:layout_margin="5dp"/>
+        <Button
+            android:text="0"
+            android:id="@+id/score_text"
+            android:enabled="false"
+            android:fontFamily="@font/fredokaone"
+            android:backgroundTint="@color/transparent_black"
+            android:stateListAnimator="@null"
+            android:layout_gravity="right"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"/>
+
+
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/first_number"
+            android:fontFamily="@font/fredokaone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textSize="50sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <TextView
+                android:id="@+id/operand_text"
+                android:fontFamily="@font/fredokaone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="75sp"
+                android:layout_marginRight="120dp"/>
+            <TextView
+                android:id="@+id/second_number"
+                android:fontFamily="@font/fredokaone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/black"/>
+        <TextView
+            android:text="0"
+
+            android:id="@+id/result_number"
+            android:fontFamily="@font/fredokaone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/celeste_p"
+            android:gravity="right"
+            android:textSize="50sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="85dp"/>
+
+    </LinearLayout>
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:columnCount="5"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button android:text="1"
+            android:id="@+id/one_button"
+            android:textSize="25sp"
+            android:fontFamily="@font/fredokaone"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_column="0"/>
+        <Button android:text="2"
+            android:id="@+id/two_button"
+            android:textSize="25sp"
+            android:fontFamily="@font/fredokaone"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"/>
+        <Button android:text="3"
+            android:id="@+id/three_button"
+            android:textSize="25sp"
+            android:fontFamily="@font/fredokaone"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"/>
+        <Button android:text="4"
+            android:id="@+id/four_button"
+            android:textSize="25sp"
+            android:fontFamily="@font/fredokaone"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"/>
+        <Button android:text="5"
+            android:id="@+id/five_button"
+            android:textSize="25sp"
+            android:fontFamily="@font/fredokaone"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1" />
+        <Button android:text="6"
+            android:id="@+id/six_button"
+            android:textSize="25sp"
+            android:fontFamily="@font/fredokaone"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"/>
+        <Button android:text="7"
+            android:id="@+id/seven_button"
+            android:textSize="25sp"
+            android:fontFamily="@font/fredokaone"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"/>
+        <Button android:text="8"
+            android:id="@+id/eight_button"
+            android:textSize="25sp"
+            android:fontFamily="@font/fredokaone"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"/>
+        <Button android:text="9"
+            android:id="@+id/nine_button"
+            android:textSize="25sp"
+            android:fontFamily="@font/fredokaone"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"/>
+        <Button android:text="0"
+            android:id="@+id/zero_button"
+            android:textSize="25sp"
+            android:fontFamily="@font/fredokaone"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1" />
+        <Button android:text="."
+            android:id="@+id/dot_button"
+            android:textSize="25sp"
+            android:fontFamily="@font/fredokaone"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/erase_button"
+            android:textSize="25sp"
+            android:drawableLeft="@drawable/ic_round_backspace_24"
+            android:backgroundTint="@color/red_p"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="1"/>
+        <Button android:text="Revisar"
+            android:id="@+id/check_button"
+            android:textSize="25sp"
+            android:backgroundTint="@color/green_p"
+            android:fontFamily="@font/fredokaone"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="3"/>
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
